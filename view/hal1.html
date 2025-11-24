@@ -18,16 +18,16 @@
         <div class="nav-hero">
           <h1 onclick="ke()">MyWebsite</h1>
           <button type="button" onclick="navBtn()" id="navBtn">
-          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-bars" ></i>
           </button>
         </div>
         <ul class="nav-menu">
-          <li onclick="ke('berada');tutup()">Berada</li>
-          <li onclick="ke('fungsi');tutup()">Fungsi</li>
-          <li onclick="ke('fitur');tutup()">Fitur</li>
-          <li onclick="ke('tentang');tutup()">Tentang</li>
-          <li onclick="ke('kontak');tutup()">Kontak</li>
-          <li onclick="darkOn();tutup()"><i class="fa-solid fa-moon"></i>
+          <li onclick="ke('#berada');tutup()">Berada</li>
+          <li onclick="ke('#fungsi');tutup()">Fungsi</li>
+          <li onclick="ke('#fitur');tutup()">Fitur</li>
+          <li onclick="ke('#tentang');tutup()">Tentang</li>
+          <li onclick="ke('#kontak');tutup()">Kontak</li>
+          <li onclick="darkOn();"><i class="fa-solid fa-moon" id="iconDrk"></i>
           </li>
         </ul>
       </div>
@@ -35,15 +35,19 @@
     
     <!-- HEADER -->
     <header>
-      <h1>Selamat datang di MyWebsite</h1>
-      <p>jelajahi web kami dengan penuh semangat</p>
-      <button onclick="ke(hal2)">Mulai sekarang</button>
+      <section id="berada">
+        <div class="hero">
+          <h1>Selamat datang di MyWebsite</h1>
+          <p>jelajahi web kami dengan penuh semangat</p>
+          <button onclick="ke(hal2)">Mulai sekarang</button>
+        </div>
+      </section>
     </header>
     
     <!-- MAIN -->
     <main>
       <!-- FUNGSI -->
-      <section>
+      <section id="fungsi">
         <div class="fungsi">
           <p>Apa fungsi web ini</p>
           <ul>
@@ -57,7 +61,7 @@
       </section>
       
       <!-- FITUR -->
-      <section>
+      <section id="fitur">
         <div class="fitur">
           <h2>Ayo kita lihat apa saja fitur-fitur yang ada di web ini</h2>
           <div class="dafitur">
@@ -84,7 +88,7 @@
       </section>
       
       <!-- TENTANG -->
-      <section>
+      <section id="tentang">
         <div class="tentang">
           <h2>Tentang</h2>
           <p>Ini adalah website pertama saya yang digunakan untuk latihan. kalian bisa memberi saran untuk website ini</p>
@@ -93,7 +97,7 @@
       </section>
       
       <!-- KONTAK -->
-      <section>
+      <section id="kontak">
         <div class="kontak">
           <h2>Hubungi kami lewat email</h2>
           <form>

@@ -8,17 +8,29 @@
   --biru: #AFE2FF;
   --biru-plus: #E4F5FF;
 }
-
+[id]{
+  scroll-margin-top: 70px;
+}
+html{
+  scroll-behavior: smooth;
+}
 body{
   background: var(--biru-plus);
   list-style: none;
   font-family: 'Outfit';
   font-weight: 400;
 }
+body.darkOn{
+  background-color: #222;
+  color: #E3E3E3;
+}
+
+/* NAVBAR */
 .nav-container{
   position: fixed;
   width: 100vw;
   background: var(--biru);
+  top: 0;
 }
 .nav-hero{
   height: 60px;
@@ -47,7 +59,7 @@ body{
   display: flex;
   flex-direction: column;
   justify-items: center;
-  transform: translateX(-100%);
+  transform: translateX(-110%);
   width: 100vw;
   transition: all 0.3s ease;
   background-color: var(--biru);
@@ -75,4 +87,12 @@ body{
 }
 .nav-menu.menuOn li{
   display: block;
+}
+#iconDrk{
+  transition: all 0.5s ease;
+}
+
+/* Hero */
+.hero{
+  margin-top: 70px;
 }
