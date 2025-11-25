@@ -1,3 +1,4 @@
+
 *{
   margin: 0;
   padding: 0;
@@ -7,9 +8,10 @@
   --putih: #FAFAFA;
   --biru: #AFE2FF;
   --biru-plus: #E4F5FF;
+  --ungu: #B45EFF;
 }
 [id]{
-  scroll-margin-top: 70px;
+  scroll-margin-top: 60px;
 }
 html{
   scroll-behavior: smooth;
@@ -17,7 +19,7 @@ html{
 body{
   background: var(--biru-plus);
   list-style: none;
-  font-family: 'Outfit';
+  font-family: sans-serif;
   font-weight: 400;
 }
 body.darkOn{
@@ -37,11 +39,6 @@ body.darkOn{
   display: flex;
   align-items: center;
 }
-.nav-hero h1{
-  margin-right: auto;
-  margin-left: 10px;
-  font-size: 35px;
-}
 .nav-hero button{
   margin-right: 20px;
   margin-left: auto;
@@ -53,7 +50,6 @@ body.darkOn{
   display: block;
   transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
-
 .nav-menu{
   position: fixed;
   display: flex;
@@ -92,7 +88,34 @@ body.darkOn{
   transition: all 0.5s ease;
 }
 
-/* Hero */
+/* HERO */
 .hero{
-  margin-top: 70px;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.hero h1{
+  font-size: 2.5rem;
+}
+.hero p{
+  padding: 0 30px;
+  font-size: 1.3rem;
+}
+.hero button{
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  background: linear-gradient( 50deg, var(--ungu),var(--biru));
+  border-radius: 20px;
+  margin-top: 20px;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.hero button:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
