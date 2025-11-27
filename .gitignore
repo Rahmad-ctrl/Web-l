@@ -1,6 +1,6 @@
 git rm --r chached assets
 gir rm --r chached cdn_modules
-echo "assets/" >> .gitignore
+echo "assets" >> .gitignore
 git "cdn_modules" >> .gitignore
 git add .gitignore
 git commit -m "Stop tracting assets/ and cdn_modules/"
