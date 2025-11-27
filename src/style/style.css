@@ -9,8 +9,8 @@
   --biru: #AFE2FF;
   --biru-plus: #E4F5FF;
   --ungu: #B45EFF;
-  --ungu-bayang : #B45EFF82;
-  --biru-bayang: #63C7FF82;
+  --ungu-bayang : rgba(180, 94, 255, 0.7);
+  --biru-bayang: rgba(175, 226, 255, 0.8);
 }
 [id]{
   scroll-margin-top: 60px;
@@ -113,28 +113,39 @@ body.darkOn{
 .hero p{
   padding: 0 30px;
   font-size: 1.3rem;
+  margin-bottom: 20px;
 }
 .hero button{
   padding: 1rem 1.5rem;
   font-size: 1.1rem;
   border-radius: 30px;
   border: none;
-  background-color: var(--putih);
+  background: linear-gradient(150deg, var(--ungu),var(--biru));
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   transition: all 0.5s ease;
+  overflow: hidden;
+  color: #333;
 }
-.hero button::after{
+.hero button::before{
   content: '';
   position: absolute;
-  width: 105%;
-  height: 110%;
-  background-image: linear-gradient(150deg, var(--ungu), var(--biru));
-  border-radius: 30px;
+  inset: 2px;
+  background: var(--putih);
+  border-radius: 25px;
   z-index: 1;
+}
+.hero button span{
+  position: relative;
+  z-index: 2;
 }
 .hero button:hover{
   transform: translateY(-5px);
+  color: var(--putih);
+  box-shadow: -50px 0 50px var(--ungu-bayang), 50px 0 50px var(--biru-bayang);
+}
+.hero button:hover::before{
+  background: linear-gradient(150deg, var(--ungu),var(--biru));
 }
