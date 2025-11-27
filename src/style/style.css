@@ -20,9 +20,9 @@ html{
 }
 body{
   background: var(--biru-plus);
-  list-style: none;
   font-family: sans-serif;
   font-weight: 400;
+  
 }
 body.darkOn{
   background-color: #222;
@@ -124,6 +124,7 @@ body.darkOn{
   align-items: center;
   justify-content: center;
   position: relative;
+  transition: all 0.5s ease;
 }
 .hero button::after{
   content: '';
@@ -132,5 +133,8 @@ body.darkOn{
   height: 110%;
   background-image: linear-gradient(150deg, var(--ungu), var(--biru));
   border-radius: 30px;
-  z-index: -1;
+  z-index: 1;
+}
+.hero button:hover{
+  transform: translateY(-5px);
 }
