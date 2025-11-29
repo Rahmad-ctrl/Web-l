@@ -1,7 +1,8 @@
 git rm --r cached assets
 gir rm --r cached cdn_modules
+git rm --r cached server.js
 echo "assets/" >> .gitignore
 echo "cdn_modules/" >> .gitignore
 git add .gitignore
-git commit -m "Stop tracting assets/ and cdn_modules/"
+git commit -m "Stop tracting assets/, cdn_modules/ and server.js"
 git push
