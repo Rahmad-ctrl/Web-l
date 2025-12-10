@@ -15,3 +15,4 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server berjalan di http://localhost:${PORT}`);
 });// update dari HP Wed Dec 10 18:57:54 WIB 2025
+// SSH aktif Wed Dec 10 21:59:27 WIB 2025
