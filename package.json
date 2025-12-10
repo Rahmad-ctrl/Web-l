@@ -1,0 +1,25 @@
+{
+  "name": "web-l",
+  "version": "1.0.0",
+  "description": "Ini adalah website untuk latihan. **Web ini bertujuan untuk tes kemampuan saya dengan html css dan js**",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rahmad-ctrl/Web-l.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Rahmad-ctrl/Web-l/issues"
+  },
+  "homepage": "https://github.com/Rahmad-ctrl/Web-l#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

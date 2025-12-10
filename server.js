@@ -1,13 +1,17 @@
-let express = require('express');
-let path = require('path');
-let app = express();
-let PORT = 3000;
+const express = require('express');
+const path = require('path');
+const app = express();
+const PORT = 3000;
 
+// Serve file statis dari folder public
 app.use(express.static('public'));
 
-app.get('/',(req, res)=> {
-  req.sendFile(path.join(__dirname, 'public','index.html'))
-})
-app.listen(PORT, ()=> {
-  console.log(`ok,anda bisa ketik http://localhost:${PORT}`)
-})
+// Route utama
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public/view/hal1.html'));
+});
+
+// Jalankan server
+app.listen(PORT, () => {
+  console.log(`Server berjalan di http://localhost:${PORT}`);
+});// update dari HP Wed Dec 10 18:57:54 WIB 2025
