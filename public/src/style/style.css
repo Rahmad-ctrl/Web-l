@@ -223,6 +223,32 @@ ul{
 .fungsi .tabfung span{
   font-weight: 500;
 }
+
+/* FITUR */
 .fitur{
-  background: red;
+  background: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+.fitur h2{
+  font-size: 1.4rem;
+  text-align: center;
+  margin: 3rem 0;
+  margin-top: 5rem;
+}
+.fitur .dafitur{
+  background: var(--putih);
+  border-radius: 30px;
+  margin: 10px 20px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  transition: all 0.4s ease;
+}
+ .fitur .dafitur:hover{
+   background: linear-gradient(90deg, var(--biru-bayang), var(--ungu));
+   transform: scale(1.05);
+ }
