@@ -1,4 +1,4 @@
-import {nav} from './index.js';
+import {nav} from './nav.js';
 nav();
-import {link} from './index.js';
+import {link} from './link.js';
 link()

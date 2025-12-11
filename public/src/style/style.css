@@ -7,6 +7,7 @@
 :root{
   --putih: #FAFAFA;
   --biru: #AFE2FF;
+  --biru-Pekat: #90dcff;
   --biru-plus: #E4F5FF;
   --ungu: #B45EFF;
   --ungu-bayang : rgba(180, 94, 255, 0.7);
@@ -247,8 +248,28 @@ ul{
   flex-direction: column;
   text-align: center;
   transition: all 0.4s ease;
+  position: relative;
+}
+.fitur .dafitur::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--ungu-bayang);
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  border-radius: 30px;
+  z-index: -1;
+  filter: blur(10px);
+  opacity: 0.8;
+}
+.fitur .dafitur::before:hover{
+  transform: translateY(-20px);;
 }
  .fitur .dafitur:hover{
-   background: linear-gradient(90deg, var(--biru-bayang), var(--ungu));
-   transform: scale(1.05);
+   background: linear-gradient(90deg, var(--biru-Pekat), var(--ungu));
+   transform: scale(1.02);
+   color: var(--putih);
+   z-index: 5;
  }
