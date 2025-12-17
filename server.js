@@ -7,7 +7,7 @@ const PORT = 3000;
 app.use(express.static('public'));
 
 // Route utama
-app.get('/', (req, res) => {
+app.get('/home', (req, res) => {
   res.sendFile(path.join(__dirname, 'public/view/hal1.html'));
 });
 

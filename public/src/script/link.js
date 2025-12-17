@@ -15,6 +15,8 @@ export function link(){
 window.kehal = function (ke){
   if (!ke) {
     console.log('maaf')
+  }else{
+    window.location.href = ke
   }
 }
 }
